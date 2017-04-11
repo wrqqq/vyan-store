@@ -1,5 +1,6 @@
 @import "bourbon"
 @import "vars.sass"
+@import "fonts.sass"
 
 body
 	font-size: 16px
@@ -8,6 +9,129 @@ body
 	line-height: 1.6
 	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
+	background-color: grey
 
 .hidden
 	display: none
+
+ul 
+	margin: 0
+	padding: 0
+
+header 
+	padding-top: 20px
+	background-color: grey
+	height: 90px
+	.header_logo
+		display: inline-block
+	.header_search 
+		display: inline-block
+		margin-left: 47px
+		margin-top: 11px
+		input
+			outline: none
+			border: none
+	.header_menu
+		padding-left: 30px
+		margin-top: 10px
+		li
+			display: inline-block
+			font-size: 12px
+			text-transform: uppercase
+			font-family: 'GothamProMedium', sans-serif
+			margin-right: 49px
+			a 
+				color: #fff
+				&:hover 
+					text-decoration: none
+					color: #fff
+			&:last-child
+				margin-right: 0
+
+	.header_call 
+		padding-left: 4px
+		&_phone 
+			font-size: 14px
+			font-family: 'GothamProMedium', sans-serif
+			color: #fff
+			text-align: center
+			position: relative
+			&:before 
+				position: absolute
+				content: ''
+				width: 12px
+				height: 12px
+				background: url('../img/shape.svg') center no-repeat
+				left: -1px
+				top: 4px
+		&_button 
+			height: 24px
+			border-radius: 100px
+			background-color: #0092ff
+			border: solid 1px #0092ff
+			text-align: center
+			color: #fff
+			font-family: 'GothamProMedium', sans-serif
+			font-size: 12px
+			margin-top: 5px
+			cursor: pointer
+	.header_currency
+		font-size: 12px
+		font-family: 'GothamProMedium', sans-serif
+		color: #fff
+		&_us 
+			margin-bottom: 9px
+			position: relative
+			&:before 
+				content: '$'
+				position: absolute
+				font-family: 'GothamProMedium', sans-serif
+				font-size: 17px
+				left: -16px
+				top: -5px
+				color: #0092ff
+		&_ru 
+			position: relative
+			&:before 
+				content: '₽'
+				position: absolute
+				font-family: 'GothamProMedium', sans-serif
+				font-size: 17px
+				left: -16px
+				top: -5px
+				color: #0092ff	
+
+.top 
+	padding-top: 230px
+	&_title 
+		font-family: 'GothamProMedium', sans-serif
+		text-align: center
+		font-size: 56px
+		color: #fff
+		text-shadow: 0 0 40px rgba(0, 0, 0, 0.5)
+		line-height: 66px
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			width: 269px
+			height: 241.1px
+			top: -52px
+			left: 50%
+			transform: translateX(-50%)
+			background: url('../img/combined-shape.svg') center no-repeat
+		&:after 
+			position: absolute
+			content: ''
+			width: 95px
+			height: 70px
+			background: url('../img/turkey.svg') center no-repeat
+			left: 50%
+			transform: translateX(-50%)
+			top: -90px
+
+
+
+
+
+
