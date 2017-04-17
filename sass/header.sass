@@ -29,7 +29,9 @@ a
 		color: black
 	&:link 
 		text-decoration: none
-		color: black				
+		color: black		
+.nopadding
+	padding: 0		
 header 
 	padding-top: 20px
 	background-color: black
@@ -230,7 +232,6 @@ header
 .catalog 
 	background-color: #ebebeb
 	&_menu
-		height: 300px
 		margin-top: 98px
 		background-color: #FFF
 		border-radius: 3px
@@ -256,13 +257,104 @@ header
 				top: 14px
 				background: url('../img/catalog-icon.svg') center top no-repeat
 		&_list 
-			padding-top: 15px
-			li 
-				color: black
-				font-size: 14px
-				font-family: 'GothamProRegular', sans-serif
-				opacity: 0.7
-				margin-left: 21px
-				padding-bottom: 18px
+			&_item
+				a
+					color: black
+					font-size: 14px
+					font-family: 'GothamProRegular', sans-serif
+					opacity: 0.7
+					padding-left: 21px
+					padding-top: 9px
+					padding-bottom: 9px
+					padding-right: 38px
+					display: block
+				&_number 
+					float: right
+					font-size: 12px
+					color: #0092ff
+					position: relative
+					&:after 
+						position: absolute
+						content: ''
+						width: 9px
+						right: -22px
+						top: 2px
+						height: 14px
+						background: url('../img/number_arrow.svg') center top no-repeat
+				&_active
+					> a
+						font-family: 'GothamProBold', sans-serif
+						color: #0092ff !important
+						border: solid 1px rgba(28, 28, 28, 0.2)
+						border-left: 2px solid #0092ff
+						box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14)
+					.catalog_menu_list_item_number
+						&:after 
+							background: url('../img/number_arrow_active.svg') center top no-repeat
+							width: 14px
+							height: 9px
+							top: 6px
+							right: -25px
+					.catalog_submenu 
+						padding-left: 43px
+						background-color: rgba(235, 235, 235, 0.45)
+						font-family: 'GothamProRegular', sans-serif
+						color: #1c1c1c
+						li
+							font-size: 14px
+							a 
+								padding-top: 9px
+								padding-bottom: 9px
+
+	.main_catalog 
+		margin-top: 91px
+		padding-left: 25px
+		&_title 
+			font-family: 'GothamProRegular', sans-serif
+			font-size: 42px
+			color: #1c1c1c
+			line-height: 1.1
+			letter-spacing: 0.8px
+		&_item
+			position: relative
+			float: left
+			margin-right: 36px
+			margin-bottom: 36px
+			width: 257px
+			height: 257px
+			&:nth-child(3n)
+				margin-right: 0
+			&_product 
+				position: absolute
+				width: 106px
+				height: 191px
+				top: 0
+				left: 21px
+				background: url('../img/birka.svg') center top no-repeat
+				text-align: center
+				&_name 
+					margin-top: 81.8px
+					display: block
+					font-size: 12px
+					letter-spacing: -0.5px
+					font-family: 'GothamProRegular', sans-serif
+					opacity: 0.6
+				&_color 
+					color: #1c1c1c
+					letter-spacing: -0.5px
+					line-height: 16px
+					display: block
+					margin-top: 3px
+					font-family: 'GothamProBold', sans-serif
+					font-weight: 500
+					font-size: 14px
+				&_number 
+					margin-top: 15px
+					display: block
+					font-size: 14px
+					color: #1c1c1c
+					letter-spacing: 0.5px
+
+
 
 
