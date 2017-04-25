@@ -1,5 +1,6 @@
 @import "bourbon"
 @import "vars.sass"
+@import "fonts.sass"
 
 //Load Libs SASS
 @import "app/libs/animate/animate.sass"
@@ -27,7 +28,70 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-//Custom Styles Here
+
+.order
+	background: #ebebeb
+	padding-top: 1px
+	padding-bottom: 113px
+	&_title
+		font-family: 'GothamProRegular', sans-serif
+		font-size: 42px
+		color: #1c1c1c
+		text-align: center
+		margin-top: 104px
+		font-weight: normal
+	&_item 
+		text-align: center
+		&_count 
+			width: 37px
+			height: 37px
+			text-align: center
+			line-height: 37px
+			background: #0092ff
+			display: block
+			border-radius: 50%
+			margin: auto
+			margin-top: 32px
+			position: relative
+			color: #fff
+			z-index: 10
+		&_text 
+			font-size: 16px
+			line-height: 1.5
+			max-width: 320px
+			margin: auto
+			margin-top: 25px
+		button 
+			color: #fff
+			background: #0092ff
+			box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.17), inset 0 -1px 1px 0 rgba(0, 0, 0, 0.16)
+			border-radius: 100px
+			border: none
+			width: 146px
+			height: 40px
+			margin-top: 31px
+		&_phone 
+			color: #0092ff
+			font-family: 'GothamProMedium', sans-serif
+			font-size: 16px
+			margin-top: 23px
+			font-weight: bold
+		.img_wrap 
+			height: 90px
+			vertical-align: top
+		.count_line
+			position: relative
+			z-index: 7
+			&:after
+				position: absolute
+				content: ''
+				height: 1px
+				width: 751px
+				border-top: 1px dashed rgba(28, 28, 28, 0.3)
+				top: 18px
+				left: 38px
+				z-index: -1
+
 
 
 //ALWAYS END
