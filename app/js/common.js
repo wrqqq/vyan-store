@@ -1,7 +1,12 @@
 $(function() {
 var theToggle = document.getElementById('toggle');
 var menu = document.querySelector('nav');
-
+$('.bxslider').bxSlider({
+  nextSelector: '#slider-next',
+  prevSelector: '#slider-prev',
+  nextText: '<img src="img/arrow-r.svg" alt="">',
+  prevText: '<img src="img/arrow.svg" alt="">'
+});
 // hasClass
 function hasClass(elem, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
